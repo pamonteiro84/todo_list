@@ -1,0 +1,10 @@
+[package]
+name = "todo_list"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+sea-orm = { version = "1", features = ["sqlx-postgres", "runtime-tokio-rustls"] }
+sea-orm-migration = { version = "1", features = ["sqlx-postgres", "runtime-tokio-rustls"] }
+tokio = { version = "1", features = ["full"] }
+dotenvy = "0.15"
