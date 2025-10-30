@@ -1,0 +1,9 @@
+DB_URL="postgres://paulo:todo_db@localhost:5433/todo_list"
+ENTITIES_DIR="src/entities"
+
+generate-entities:
+	@echo "Gerando entidades do banco de dados..."
+	sea-orm-cli generate entity -u $(DB_URL) -o $(ENTITIES_DIR)
+	@echo "Entidades geradas em $(ENTITIES_DIR)"
+
+.PHONY: generate-entities

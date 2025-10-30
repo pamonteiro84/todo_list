@@ -8,3 +8,8 @@ sea-orm = { version = "1", features = ["sqlx-postgres", "runtime-tokio-rustls"] 
 sea-orm-migration = { version = "1", features = ["sqlx-postgres", "runtime-tokio-rustls"] }
 tokio = { version = "1", features = ["full"] }
 dotenvy = "0.15"
+
+[workspace]
+members = [
+    ".",
+    "migration"]
