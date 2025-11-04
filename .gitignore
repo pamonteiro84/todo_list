@@ -1,3 +1,6 @@
 /target
-/.env
-/db_commands.txt
+.env            
+.env.*          
+
+
+db_commands.txt
