@@ -9,6 +9,8 @@ sea-orm-migration = { version = "1", features = ["sqlx-postgres", "runtime-tokio
 tokio = { version = "1", features = ["full"] }
 dotenvy = "0.15"
 
+migration = { path = "./migration", version  = "0.1.0" }
+
 [workspace]
 members = [
     ".",

@@ -2575,6 +2575,7 @@ name = "todo_list"
 version = "0.1.0"
 dependencies = [
  "dotenvy",
+ "migration",
  "sea-orm",
  "sea-orm-migration",
  "tokio",
