@@ -1,0 +1,13 @@
+[env]
+DB_URL = "postgres://paulo:todo_db@localhost:5434/todo_list"
+ENTITIES_DIR = "src/entities"
+
+[tasks.generate-entities]
+workspace = false
+command = "sea-orm-cli"
+args = ["generate", "entity", "-u", "${DB_URL}", "-o", "${ENTITIES_DIR}"]
+
+[tasks.run-migrations]
+workspace = false
+command = "cargo"
+args = ["run", "--package", "migration", "--", "up"]
