@@ -27,5 +27,6 @@ members = [
     "migration",
     "api",
     "services",
+    "entities"
 ]
     

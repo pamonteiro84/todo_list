@@ -24,7 +24,7 @@ impl MigrationTrait for Migration {
                 Table::create()
                     .table(Todos::Table)
                     .if_not_exists()
-                    .col(pk_auto(Todos::Id)) // integer PK auto-increment
+                    .col(pk_auto(Todos::Id))
                     .col(ColumnDef::new(Todos::UserId).uuid().not_null())
                     .col(ColumnDef::new(Todos::Title).string().not_null())
                     .col(
